@@ -30,7 +30,7 @@ export const Adega = () => {
   return (
     <section>
       <h1>KENZIE BEER SUPLIER!</h1>
-      <p>Choose the appropriate beers for a perfect celebration:</p>
+      <p id="adega">Choose the appropriate beers for a perfect celebration:</p>
       <ul>
         {adega.map((elt, index) => (
           <li key={index}>
@@ -38,7 +38,7 @@ export const Adega = () => {
           </li>
         ))}
       </ul>
-      <div>
+      <div id="buttons">
         <button onClick={() => history1.push("/formatura")}>
           Ir para o Bar da Formatura!
         </button>
