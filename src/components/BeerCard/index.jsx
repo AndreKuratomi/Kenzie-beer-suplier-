@@ -1,4 +1,5 @@
 export const BeerCard = ({ elt }) => {
+  console.log(elt);
   return (
     <article key={elt.id}>
       <figure>

@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import { CasamentoContext } from "../../Providers/casamento";
 
-import SoldBeerCart from "../SoldBeerCard";
+import { SoldBeerCard } from "../SoldBeerCard";
 
 export const BarCasamento = () => {
   const { mariageBeers } = useContext(CasamentoContext);
@@ -11,7 +11,7 @@ export const BarCasamento = () => {
       {mariageBeers &&
         mariageBeers.map((elt) => (
           <li>
-            <SoldBeerCart elt={elt} />
+            <SoldBeerCard elt={elt} />
           </li>
         ))}
     </ul>

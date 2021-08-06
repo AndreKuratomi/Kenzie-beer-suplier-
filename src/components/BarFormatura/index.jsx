@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import { FormaturaContext } from "../../Providers/formatura";
 
-import SoldBeerCart from "../SoldBeerCard";
+import { SoldBeerCard } from "../SoldBeerCard";
 
 export const BarFormatura = () => {
   const { graduationBeers } = useContext(FormaturaContext);
@@ -11,7 +11,7 @@ export const BarFormatura = () => {
       {graduationBeers &&
         graduationBeers.map((elt) => (
           <li>
-            <SoldBeerCart elt={elt} />
+            <SoldBeerCard elt={elt} />
           </li>
         ))}
     </ul>
