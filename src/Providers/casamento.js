@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 
+export const CasamentoContext = createContext([]);
+
 export const CasamentoProvider = ({ children }) => {
   const [mariageBeers, setMariageBeers] = useState([]);
-
-  const CasamentoContext = createContext([]);
 
   const addToMariagePub = (item) => {
     setMariageBeers([...mariageBeers, item]);

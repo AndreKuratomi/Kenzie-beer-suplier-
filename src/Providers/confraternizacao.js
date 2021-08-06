@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 
+export const ConfraternizacaoContext = createContext([]);
+
 export const ConfraternizacaoProvider = ({ children }) => {
   const [fraternizationBeers, setFraternizationBeers] = useState([]);
-
-  const ConfraternizacaoContext = createContext([]);
 
   const addToFraternizationPub = (item) => {
     setFraternizationBeers([...fraternizationBeers, item]);

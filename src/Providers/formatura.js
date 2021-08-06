@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 
+export const FormaturaContext = createContext([]);
+
 export const FormaturaProvider = ({ children }) => {
   const [graduationBeers, setGraduationBeers] = useState([]);
-
-  const FormaturaContext = createContext([]);
 
   const addToGraduationPub = (item) => {
     setGraduationBeers([...graduationBeers, item]);
