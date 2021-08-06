@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 
 import { api } from "../../services/api";
 
@@ -18,6 +19,10 @@ export const Adega = () => {
     []
   );
 
+  const history1 = useHistory();
+  const history2 = useHistory();
+  const history3 = useHistory();
+
   return (
     <section>
       <h1>KENZIE BEER SUPLIER!</h1>
@@ -30,9 +35,15 @@ export const Adega = () => {
         ))}
       </ul>
       <div>
-        <button>Ir para o Bar da Confraternização!</button>
-        <button>Ir para o Bar da Formatura!</button>
-        <button>ir para o Bar do Casamento!</button>
+        <button onClick={() => history1.push("/formatura")}>
+          Ir para o Bar da Formatura!
+        </button>
+        <button onClick={() => history2.push("/casamento")}>
+          Ir para o Bar do Casamento!
+        </button>
+        <button onClick={() => history3.push("/confraternizacao")}>
+          Ir para o Bar da Confraternização!
+        </button>
       </div>
     </section>
   );
