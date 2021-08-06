@@ -1,10 +1,19 @@
-import {useContext} from "react"
+import { useContext } from "react";
 
-import {CasamentoContext} from "../../Providers/casamento";
+import { CasamentoContext } from "../../Providers/casamento";
+
+import SoldBeerCart from "../SoldBeerCard";
 
 export const BarCasamento = () => {
-    const {} = useContext(CasamentoContext);
-    return(
-        
-    )
-}
+  const { mariageBeers } = useContext(CasamentoContext);
+  return (
+    <ul>
+      {mariageBeers &&
+        mariageBeers.map((elt) => (
+          <li>
+            <SoldBeerCart elt={elt} />
+          </li>
+        ))}
+    </ul>
+  );
+};
