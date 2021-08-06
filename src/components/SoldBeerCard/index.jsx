@@ -7,7 +7,10 @@ export const SoldBeerCard = ({ elt }) => {
         <img src={elt.image_url} alt={elt.name} />
         <figcaption>{elt.name}</figcaption>
       </figure>
-      <p>Name: {elt.name}</p>
+      <p>
+        <span>Name: </span>
+        {elt.name}
+      </p>
       <RemoveButton elt={elt}>Remove this beer...</RemoveButton>
     </article>
   );
