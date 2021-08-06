@@ -1,3 +1,5 @@
+import { AddButton } from "../AddButton";
+
 export const BeerCard = ({ elt }) => {
   // console.log(elt);
   return (
@@ -24,7 +26,7 @@ export const BeerCard = ({ elt }) => {
         {elt.volume.value}
         {elt.volume.unit}
       </p>
-      <button onClick={"dfsfs"}>Choose this beer!</button>
+      <AddButton elt={elt}>Choose this beer!</AddButton>
     </article>
   );
 };

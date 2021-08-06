@@ -15,7 +15,7 @@ export const CasamentoProvider = ({ children }) => {
 
   return (
     <CasamentoContext.Provider
-      value={{ addToMariagePub, removeFromMariagePub }}
+      value={{ mariageBeers, addToMariagePub, removeFromMariagePub }}
     >
       {children}
     </CasamentoContext.Provider>
