@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+import { AdegaProvider } from "./Providers/adega";
 import { FormaturaProvider } from "./Providers/formatura";
 import { ConfraternizacaoProvider } from "./Providers/confraternizacao";
 import { CasamentoProvider } from "./Providers/casamento";
@@ -13,13 +14,15 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ConfraternizacaoProvider>
-        <CasamentoProvider>
-          <FormaturaProvider>
-            <App />
-          </FormaturaProvider>
-        </CasamentoProvider>
-      </ConfraternizacaoProvider>
+      <AdegaProvider>
+        <ConfraternizacaoProvider>
+          <CasamentoProvider>
+            <FormaturaProvider>
+              <App />
+            </FormaturaProvider>
+          </CasamentoProvider>
+        </ConfraternizacaoProvider>
+      </AdegaProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

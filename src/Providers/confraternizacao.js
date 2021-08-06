@@ -17,7 +17,11 @@ export const ConfraternizacaoProvider = ({ children }) => {
 
   return (
     <ConfraternizacaoContext.Provider
-      value={{ addToFraternizationPub, removeFromFraternizationPub }}
+      value={{
+        fraternizationBeers,
+        addToFraternizationPub,
+        removeFromFraternizationPub,
+      }}
     >
       {children}
     </ConfraternizacaoContext.Provider>

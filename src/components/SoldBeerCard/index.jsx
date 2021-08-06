@@ -1,3 +1,5 @@
+import { RemoveButton } from "../RemoveButton";
+
 export const SoldBeerCard = ({ elt }) => {
   return (
     <article key={elt.id}>
@@ -6,7 +8,7 @@ export const SoldBeerCard = ({ elt }) => {
         <figcaption>{elt.name}</figcaption>
       </figure>
       <p>Name: {elt.name}</p>
-      <button onClick={"dfsfs"}>Remove this beer...</button>
+      <RemoveButton elt={elt}>Remove this beer...</RemoveButton>
     </article>
   );
 };

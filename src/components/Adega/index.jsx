@@ -1,12 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
+// import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 import { api } from "../../services/api";
 
 import { BeerCard } from "../BeerCard";
 
+import { AdegaContext } from "../../Providers/adega";
+
 export const Adega = () => {
-  const [adega, setAdega] = useState([]);
+  // const [adega, setAdega] = useState([]);
+  const { adega, setAdega } = useContext(AdegaContext);
 
   useEffect(
     () =>
