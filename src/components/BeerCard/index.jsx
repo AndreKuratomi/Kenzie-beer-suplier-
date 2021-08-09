@@ -1,7 +1,8 @@
-import { AddButton } from "../AddButton";
+import { AddButtonGraduation } from "../AddButtonGraduation";
+import { AddButtonMariage } from "../AddButtonMariage";
+import { AddButtonFraternization } from "../AddButtonFraternization";
 
 export const BeerCard = ({ elt }) => {
-  // console.log(elt);
   return (
     <article key={elt.id}>
       <figure>
@@ -26,7 +27,15 @@ export const BeerCard = ({ elt }) => {
         {elt.volume.value}
         {elt.volume.unit}
       </p>
-      <AddButton elt={elt}>Choose this beer!</AddButton>
+      <AddButtonGraduation elt={elt}>
+        Selecione para o bar da formatura!
+      </AddButtonGraduation>
+      <AddButtonMariage elt={elt}>
+        Selecione para o bar do casamento!
+      </AddButtonMariage>
+      <AddButtonFraternization elt={elt}>
+        Selecione para o bar da confraternização!
+      </AddButtonFraternization>
     </article>
   );
 };

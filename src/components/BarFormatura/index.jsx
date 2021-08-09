@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { FormaturaContext } from "../../Providers/formatura";
 
-import { SoldBeerCard } from "../SoldBeerCard";
+import { SoldBeerCardToGraduation } from "../SoldBeerCardToGraduation";
 
 export const BarFormatura = () => {
   const { graduationBeers } = useContext(FormaturaContext);
@@ -18,7 +18,7 @@ export const BarFormatura = () => {
         {graduationBeers &&
           graduationBeers.map((elt) => (
             <li>
-              <SoldBeerCard elt={elt} />
+              <SoldBeerCardToGraduation elt={elt} />
             </li>
           ))}
       </ul>

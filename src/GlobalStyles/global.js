@@ -23,6 +23,7 @@ export const GlobalStyles = createGlobalStyle`
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     li {
         list-style-type: none;
@@ -40,7 +41,7 @@ export const GlobalStyles = createGlobalStyle`
         text-overflow: ellipsis;
         white-space: nowrap;
         padding: 1rem;
-        width: 250px;
+        width: 300px;
     }
 
     figure {
@@ -77,6 +78,7 @@ export const GlobalStyles = createGlobalStyle`
     #buttons {
         display: flex;
         justify-content: space-around;
+        padding: 1rem 
     }
 
 `;
