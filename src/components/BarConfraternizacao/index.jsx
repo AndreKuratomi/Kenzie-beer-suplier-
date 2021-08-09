@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { ConfraternizacaoContext } from "../../Providers/confraternizacao";
 
-import { SoldBeerCard } from "../SoldBeerCard";
+import { SoldBeerCardToFraternization } from "../SoldBeerCardToFraternization";
 
 export const BarConfraternizacao = () => {
   const { fraternizationBeers } = useContext(ConfraternizacaoContext);
@@ -18,7 +18,7 @@ export const BarConfraternizacao = () => {
         {fraternizationBeers &&
           fraternizationBeers.map((elt) => (
             <li>
-              <SoldBeerCard elt={elt} />
+              <SoldBeerCardToFraternization elt={elt} />
             </li>
           ))}
       </ul>

@@ -1,6 +1,6 @@
-import { RemoveButton } from "../RemoveButton";
+import { RemoveFromGraduationButton } from "../RemoveFromGraduationButton";
 
-export const SoldBeerCard = ({ elt }) => {
+export const SoldBeerCardToGraduation = ({ elt }) => {
   return (
     <article key={elt.id}>
       <figure>
@@ -11,7 +11,9 @@ export const SoldBeerCard = ({ elt }) => {
         <span>Name: </span>
         {elt.name}
       </p>
-      <RemoveButton elt={elt}>Remove this beer...</RemoveButton>
+      <RemoveFromGraduationButton elt={elt}>
+        Remover deste bar
+      </RemoveFromGraduationButton>
     </article>
   );
 };

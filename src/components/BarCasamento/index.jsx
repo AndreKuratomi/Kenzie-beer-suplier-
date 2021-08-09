@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { CasamentoContext } from "../../Providers/casamento";
 
-import { SoldBeerCard } from "../SoldBeerCard";
+import { SoldBeerCardToMariage } from "../SoldBeerCardToMariage";
 
 export const BarCasamento = () => {
   const { mariageBeers } = useContext(CasamentoContext);
@@ -18,7 +18,7 @@ export const BarCasamento = () => {
         {mariageBeers &&
           mariageBeers.map((elt) => (
             <li>
-              <SoldBeerCard elt={elt} />
+              <SoldBeerCardToMariage elt={elt} />
             </li>
           ))}
       </ul>

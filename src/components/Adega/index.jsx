@@ -31,13 +31,6 @@ export const Adega = () => {
     <section>
       <h1>KENZIE BEER SUPLIER!</h1>
       <p id="adega">Choose the appropriate beers for a perfect celebration:</p>
-      <ul>
-        {adega.map((elt, index) => (
-          <li key={index}>
-            <BeerCard elt={elt} />
-          </li>
-        ))}
-      </ul>
       <div id="buttons">
         <button onClick={() => history1.push("/formatura")}>
           Ir para o Bar da Formatura!
@@ -49,6 +42,13 @@ export const Adega = () => {
           Ir para o Bar da Confraternização!
         </button>
       </div>
+      <ul>
+        {adega.map((elt, index) => (
+          <li key={index}>
+            <BeerCard elt={elt} />
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
