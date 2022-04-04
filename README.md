@@ -8,7 +8,7 @@
 
 # Descrição
 
-<p><b>Kenzie beer suplier</b> é uma aplicação que simula um administrador de eventos que gerencia a distribuição de bebidas, fazendo uso da API Punk, para 3 eventos: casamento, formatura e confraternização. Esta aplicação utiliza React e o gerenciador de state Context-Api.</p>
+<p><b>Kenzie beer suplier</b> é uma aplicação que simula um administrador de eventos que gerencia a distribuição de bebidas, fazendo uso da <strong>API Punk</strong>, para 3 eventos: casamento, formatura e confraternização. Esta aplicação utiliza React e o gerenciador de state Context-Api.</p>
 <br>
 Link deploy vercel:
 
