@@ -12,7 +12,7 @@
 <br>
 Link deploy vercel:
 
-https://3b05-entrega-administracao-de-eventos.vercel.app/
+https://kenzie-beer-suplier.vercel.app/
 
 # Instalação
 
@@ -66,7 +66,7 @@ yarn start
 
 <p>Ou podemos utilizar o link do deploy Vercel a seguir:</p>
 
-https://3b05-entrega-administracao-de-eventos.vercel.app/
+https://kenzie-beer-suplier.vercel.app/
 
 
 # Termos de uso
