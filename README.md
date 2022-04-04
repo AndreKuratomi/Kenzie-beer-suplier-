@@ -4,11 +4,11 @@
 - [Instalação](#instalação)
 - [Utilização](#utilização)
 - [Termos de uso](#termos-de-uso)
-
+- [Referências](#referências)
 
 # Descrição
 
-<p><b>Kenzie beer suplier</b> é uma aplicação que simula um administrador de eventos que gerencia a distribuição de bebidas, fazendo uso da API Digimon, para 3 eventos: casamento, formatura e confraternização. Esta aplicação utiliza React e o gerenciador de state Context-Api.</p>
+<p><b>Kenzie beer suplier</b> é uma aplicação que simula um administrador de eventos que gerencia a distribuição de bebidas, fazendo uso da API Punk, para 3 eventos: casamento, formatura e confraternização. Esta aplicação utiliza React e o gerenciador de state Context-Api.</p>
 <br>
 Link deploy vercel:
 
@@ -73,3 +73,7 @@ https://3b05-entrega-administracao-de-eventos.vercel.app/
 
 <p>Esta aplicação atende a fins exclusivamente didáticos e não possui qualquer intuito comercial.</p>
 
+
+# Referências
+
+- [API Punk](#https://punkapi.com/documentation/v2)
