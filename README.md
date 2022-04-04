@@ -76,4 +76,4 @@ https://3b05-entrega-administracao-de-eventos.vercel.app/
 
 # Referências
 
-- [API Punk](#https://punkapi.com/documentation/v2)
+- [API Punk](https://punkapi.com/documentation/v2)
